@@ -1,18 +1,18 @@
   @media (max-width: 1000px) {
 
 
-.burger {
-	display: block;
-}
-nav {
-	display: none;
-}
+  	.burger {
+  		display: block;
+  	}
+  	nav {
+  		display: none;
+  	}
 
-.show:hover>nav {
-display: block;
-}
 
-}
+  	.burger:hover ~ nav {
+  		display: block;
+  	}
+  }
 
 
 
