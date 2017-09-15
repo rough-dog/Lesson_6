@@ -1,18 +1,246 @@
-  @media (max-width: 1000px) {
+ @media (min-width: 1000px) and (max-width: 3000px) {
+
+ 	.wrap {
+ 		max-width:  1200px;
+ 		margin: 0 auto;
+ 		position: relative;
+ 	}
+
+ 	.wrap ul {
+ 		margin: 0;
+ 	}
+
+ 	.wrap>ul>li {
+ 		position: relative;
+ 		list-style: none;
+ 	}
 
 
-  	.burger {
-  		display: block;
-  	}
-  	nav {
-  		display: none;
-  	}
+ 	nav {
+ 		position: absolute;
+ 		right: 0px;
+ 	}
+
+ 	nav ul {
+ 		list-style: none;
+ 	}
+
+ 	nav>ul>li {
+ 		padding-top: 2%;
+ 		float: left;
+ 		margin: 10px 15px;
+ 	}
+
+ 	nav ul li a {
+ 		color: #fff;
+ 		text-decoration: none;
+ 		text-transform: uppercase;
+ 		padding: 12px;
+ 	}
+
+ 	.active {
+ 		color: rgb(230, 230, 230);
+ 		text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+ 		-webkit-border-radius: 6px;
+ 		-moz-border-radius: 6px;
+ 		border-radius: 6px;
+ 		background: rgb(50, 163, 69);
+ 		background: -moz-linear-gradient(90deg, rgb(50, 163, 69) 100%, rgb(37, 142, 34) 70%);
+ 		background: -webkit-linear-gradient(90deg, rgb(50, 163, 69) 100%, rgb(37, 142, 34) 70%);
+ 		background: -o-linear-gradient(90deg, rgb(50, 163, 69) 100%, rgb(37, 142, 34) 70%);
+ 		background: -ms-linear-gradient(90deg, rgb(50, 163, 69) 100%, rgb(37, 142, 34) 70%);
+ 		background: linear-gradient(0deg, rgb(50, 163, 69) 100%, rgb(37, 142, 34) 70%);
+ 		-webkit-box-shadow: inset /*реверс тени*/ 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		-moz-box-shadow:    inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		box-shadow:         inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+
+ 	}
+
+ 	nav>ul>li:hover>a {
+ 		color: rgb(230, 230, 230);
+ 		text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+ 		-webkit-border-radius: 6px;
+ 		-moz-border-radius: 6px;
+ 		border-radius: 6px;
+ 		background: #E16B2A;
+ 		-webkit-box-shadow: inset /*реверс тени*/ 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		-moz-box-shadow:    inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		box-shadow:         inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+
+ 	}
+
+ 	nav>ul>li:hover> .sub{
+ 		display: block;
+ 	}
+
+ 	.sub  {
+ 		background: #E16B2A;
+ 		border-radius: 10px;
+ 		padding: 0px;
+ 		min-width: 200px;
+ 		padding: 2px;
+ 		position: absolute;
+ 		top: 53px;
+ 		display: none;
+ 	}
+
+ 	.sub li {
+ 		border-radius: 10px;
+ 		background:  #D95820;
+ 		margin: 7px;
+ 		text-align: center;
+ 		padding: 8px;
+ 	}
+
+ 	.sub li a {
+ 		padding: 8px 48px;	
+ 	}
+
+ 	.sub li:hover {
+ 		text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+ 		-webkit-border-radius: 6px;
+ 		-moz-border-radius: 6px;
+ 		border-radius: 6px;
+ 		background: rgb(50, 163, 69);
+ 		-webkit-box-shadow: inset /*реверс тени*/ 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		-moz-box-shadow:    inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		box-shadow:         inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 	}
+ }
 
 
-  	.burger:hover ~ nav {
-  		display: block;
-  	}
-  }
+ @media (max-width: 1000px) {
+
+ 	.wrap {
+
+ 		max-width:  1200px;
+ 		position: relative;
+ 	}
+
+ 	.wrap ul {
+ 		margin: 0;
+
+ 	}
+
+ 	.wrap>ul>li {
+ 		list-style: none;
+ 	}
+
+
+ 	.burger {
+ 		display: block;
+ 	}
+
+ 	nav {
+ 		display: none;
+ 	}   
+
+
+ 	.wrap>ul>li:hover>  nav  {
+ 		display: block;
+ 	}  
+
+ 	.wrap>ul>li:hover>  .burger  {
+ 		color: #E16B2A;
+
+ 	}  
+
+
+
+ 	nav {
+ 		position: absolute;
+ 		right: 0px;
+ 		background: #E16B2A;
+ 		border-radius: 5px;
+ 		padding: 2px;
+ 		top: 63px;
+ 	}
+
+
+ 	nav ul {
+ 		list-style: none;
+ 	}
+
+ 	nav>ul>li {
+ 		border-radius: 5px;
+ 		background:  #D95820;
+ 		margin: 7px;
+ 		text-align: center;
+ 		padding: 8px;
+ 	}
+
+ 	nav ul li a {
+ 		color: #fff;
+ 		text-decoration: none;
+ 		text-transform: uppercase;
+ 		padding: 8px;
+ 		margin: 7px;
+ 	}
+
+
+ 	.active {
+ 		-webkit-border-radius: 10px;
+ 		-moz-border-radius: 10px;
+ 		border-radius: 10px;
+ 		background: rgb(50, 163, 69);
+ 		-webkit-box-shadow: inset /*реверс тени*/ 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		-moz-box-shadow:    inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		box-shadow:         inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+
+ 	}
+
+ 	nav>ul>li:hover>a {
+ 		text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+ 		-webkit-border-radius: 6px;
+ 		-moz-border-radius: 6px;
+ 		border-radius: 6px;
+ 		background: rgb(50, 163, 69);
+ 		-webkit-box-shadow: inset /*реверс тени*/ 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		-moz-box-shadow:    inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		box-shadow:         inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+
+ 	}
+
+ 	nav>ul>li:hover> .sub{
+ 		display: block;
+ 	}
+
+ 	.sub  {
+ 		background: #E16B2A;
+ 		border-radius: 10px;
+ 		padding: 0px;
+ 		min-width: 200px;
+ 		padding: 2px;
+ 		position: absolute;
+ 		right: 65%;
+ 		display: none;
+ 	}
+
+ 	.sub li {
+ 		border-radius: 10px;
+ 		background:  #D95820;
+ 		margin: 5px;
+ 		text-align: center;
+ 		padding: 8px;
+ 	}
+
+ 	.sub li a {
+ 		padding: 8px 28px;	
+ 	}
+
+ 	.sub li:hover {
+ 		text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+ 		-webkit-border-radius: 6px;
+ 		-moz-border-radius: 6px;
+ 		border-radius: 6px;
+ 		background: rgb(50, 163, 69);
+ 		-webkit-box-shadow: inset /*реверс тени*/ 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		-moz-box-shadow:    inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 		box-shadow:         inset 2px 3px 0px rgba(50, 50, 50, 0.63);
+ 	}
+
+
+ }
 
 
 
